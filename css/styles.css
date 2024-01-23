@@ -1,0 +1,572 @@
+/* - Feuille de style en cascade - */
+/* | --------------------------- |*/
+
+/* Sélecteur universel */
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+/* Sélecteur universel */
+
+/* Header */
+/* .header {
+    background-color: #FFF;
+} */
+.header .nav{
+    display: flex;
+    justify-content: space-between;  
+    flex-direction: row;
+    align-items: center;
+    padding: 15px;
+}
+.header .picture{
+    text-align: center;
+}
+.header .nav .logo{
+    width: 50%;
+}
+.header .nav .links ul{
+    list-style-type: none;
+}
+.header .nav .links ul li{
+    display: inline-block;
+}
+.header .nav .links .link{
+    text-decoration: none;
+    color: #000;
+    padding: 18px;
+    margin: 25px;
+}
+.header .nav .links .link:hover{
+    border-top: 6px solid #0065FC;
+    color: #0065FC;
+}
+/* Header */
+
+.title{
+    font-size: 18px;
+    color: #000;
+}
+.subtitle{
+    margin-top: 25px;
+    color: silver;
+    font-size: 16px;
+}
+.title_subtitle{
+    color: silver;
+    font-size: 16px;
+    text-align: left;
+    padding: 61px;
+    /* border: 1px solid black; */
+}
+
+/* Formulaire de recherche */
+.form1{
+    padding: 15px;
+    /* border: 1px solid black; */
+    margin: -36px 0 0 42px;
+}
+.form1 .label{
+    background-color: #F2F2F2;
+    border: 1px solid rgb(231, 231, 231);
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    padding: 11px;
+}
+.iconMaps{
+    width: 14px;
+    position: relative;
+    top: 4px;
+    left: 2px;
+}
+.form1 input[type="text"]{
+    margin-left: -4px;
+    border-radius: 3px;
+    width: 192px;
+    height: 38px;
+}
+.form1 input[type="submit"]{
+    background-color: #0065FC;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding: 11.5px;
+    margin-left: -4px;
+    color: #FFF;
+}
+/* Formulaire de recherche */
+
+/* Formulaire de recherche pour mobile */
+.form2{
+    display: none;
+    padding: 15px;
+    /* border: 1px solid black; */
+    margin: -36px 0 0 42px;
+}
+.form2 .label{
+    background-color: #F2F2F2;
+    border: 1px solid rgb(231, 231, 231);
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    padding: 11px;
+}
+.iconMaps{
+    width: 14px;
+    position: relative;
+    top: 4px;
+    left: 2px;
+}
+.form2 input[type="text"]{
+    margin-left: -4px;
+    border-radius: 3px;
+    width: 192px;
+    height: 38px;
+}
+.form2 input[type="button"]{  
+    margin-left: -4px;
+    width: 25px;
+    color: #FFF;
+}
+.form2 button{
+    background-color: #0065FC;
+    border: 3px solid #0065FC;
+    border-radius: 11px;
+    position: relative;
+    top: 11px;
+    left: -4px;
+}
+.form2 .iconButton{
+    background-color: #0065FC;
+    border-radius: 11px;
+    padding: 5px;
+    width: 25px;
+    position: relative;
+    top: 2px;
+}
+/* Formulaire de recherche pour mobile */
+
+/* Filtres */
+.filtres{
+    padding: 15px;
+    margin-bottom: 25px;
+}
+.filtres p{
+    margin-left: 45px;
+}
+.filtres span{
+    border: 1px solid black;
+    padding: 15px;
+    border-radius: 25px;
+    margin-right: 5px;
+    margin-left: 9px;
+}
+.filtres a{
+    text-decoration: none;
+    color: #000;
+}
+.filtres span:hover{
+    background-color: #0065FC;
+    border: 1px solid #F2F2F2;
+    cursor: pointer;
+    border-radius: 25px;
+}
+.filtres .iconMoney{
+    margin-right: 5px;
+    position: relative;
+    top: 7px;
+    width: 25px;
+}
+.filtres .iconPerson{
+    margin-right: 5px;
+    position: relative;
+    top: 7px;
+    width: 15px;
+}
+.filtres .iconHeart{
+    margin-right: 5px;
+    position: relative;
+    top: 7px;
+    width: 25px;
+}
+.filtres .iconNospepites{
+    margin-right: 5px;
+    position: relative;
+    top: 7px;
+    width: 25px;
+}
+/* Filtres */
+
+.iconInfo{
+    width: 25px;
+    position: relative;
+    top: 5px;
+    margin-right: 5px;
+    margin-left: 59px;
+}
+
+/* Section */
+.section{
+    padding: 25px;
+    margin-top: 69px;
+    margin-bottom: 91px;
+}
+.section .article_aside{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    margin: 5px;
+    margin-bottom: 91px;
+}
+.section div{
+    padding: 15px;
+    margin: 5px;
+}
+.article{
+    border-radius: 30px;
+    background-color: #F2F2F2;
+    padding: 5px;
+    margin: 5px;
+    width: 55%;
+}
+.article .title_hebergement{
+    font-weight: bold;
+}
+.article .title_hebergement_description{
+    color: silver;
+}
+.article .etoiles{
+    padding: 0;
+    margin: 0;
+}
+.article .etoiles .etoile{
+    width: 9px;
+}
+.article a{
+    font-weight: bold;
+    text-decoration: none;
+    color: #000;
+}
+.article .galeries_article{
+    display: flex;
+    justify-content: space-between;
+}
+.article .galeries_article div{
+    background-color: white;
+    border-radius: 30px;
+    width: 100%;
+}
+.article .galeries_article img{
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    width: 100%;
+    height: 40%;
+}
+.aside{
+    border-radius: 15px;
+    background-color: #F2F2F2;
+    padding: 5px;
+    margin: 5px;
+    width: 35%;
+}
+.aside .galeries_aside{
+    display: flex;
+    background-color: white;
+    border-radius: 15px;
+    height: 171px;
+}
+.aside img{
+    width: 125px;
+    height: 115px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+.aside .galeries_aside .etoiles{
+    margin-left: -15px;
+    margin-top: 31px;
+}
+.aside .galeries_aside .etoile{
+    width: 9px;
+    height: 15px;
+}
+.aside .title_hebergement{
+    font-weight: bold;
+}
+.aside .title_hebergement_description{
+    color: silver;
+}
+.aside .iconGraphique{
+    width: 35px;
+    position: relative;
+    top: -43px;
+    float: right;
+}
+.activites{
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+}
+.activites img{
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    width: 100%;
+    height: 145px;
+}
+.activites p{
+    text-align: left;
+    margin-top: 25px;
+}
+.activites div{
+    background-color: #F2F2F2;
+    border-radius: 15px;
+    text-align: center;
+    width: 25%;
+}
+/* Section */
+
+/* Footer */
+.footer{
+    display: flex;
+    justify-content: space-between; 
+    background-color: #F2F2F2;
+    padding: 5px;
+    margin: 25px 25px 0 25px;
+}
+.footer div{
+    padding: 15px;
+    margin: 5px;
+    width: 16%;
+}
+.footer div p{
+    padding-top: 19px;
+    margin-top: 19px;
+}
+/* Footer */
+
+/* Responsive design (Desktop) */
+@media all and (min-width: 1024px) and (max-width: 1440px){
+    /* Sélecteur universel */
+    *{
+        padding: 0;
+        margin: 0;
+        font-family: 'Raleway', sans-serif;
+    }
+    /* Sélecteur universel */
+
+    /* Body */
+    body{
+        margin: 0 15px 0 15px;
+    }
+    /* Body */
+
+    /* Header */
+    .header{
+        /* background-color: #FFF; */
+        background-color: #F2F2F2;
+    }
+    /* Header */
+}
+/* Responsive design (Desktop) */
+
+/* Responsive design (Tablette) */
+@media all and (min-width: 768px) and (max-width: 1024px){
+    /* Sélecteur universel */
+    *{
+        padding: 0;
+        margin: 0;
+        font-family: 'Raleway', sans-serif;
+    }
+    /* Sélecteur universel */
+
+    /* Header */
+    /* .header{
+        background-color: #FFF;
+        background-color: blue;
+    } */
+    /* Header */
+
+    /* Section */
+    section .article_aside{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        padding: 5px;
+        margin: 5px;
+        margin-bottom: 91px;
+    }
+    .article{
+        padding: 5px;
+        margin: 5px;
+        width: 100%;
+        margin-bottom: 91px;
+    }
+    .aside{
+        padding: 5px;
+        margin: 5px;
+        /* width: 30%; */
+        width: 100%;
+    }
+    /* Section */
+}
+/* Responsive design (Tablette) */
+
+/* Responsive design (Mobile) */
+@media screen and (max-width: 768px){
+    /* Header */
+    .header{
+        background-color: #FFF;
+        border-bottom: 9px solid #F2F2F2;
+        height: 163px;
+    }
+    .header .nav{
+        display: flex;
+        justify-content: space-between; 
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+    .header .nav .logo{
+        width: 50%;
+    }
+    .header .nav .links ul{
+        list-style-type: none;
+    }
+    .header .nav .links ul li{
+        display: inline-block;
+    }
+    .header .nav .links .link{
+        text-decoration: none;
+        color: #000;
+        padding: 28px 18px;
+        margin: 25px;
+    }
+    .header .nav .links .link.hebergement, .header .nav .links .link.link_activites{
+        position: absolute;
+        text-align: center;
+        width: 42%;
+    }
+    .header .nav .links .link.hebergement{
+        left: -25px;
+    }
+    .header .nav .links .link.link_activites{
+        right: -25px;
+    }
+    .header .nav .links .link:hover{
+        /* border-bottom: 6px solid #0065FC; */
+        border-top: none;
+        color: #0065FC;
+        border-bottom: 6px solid #0065FC;
+    }
+    /* Header */
+
+    .title{
+        margin-top: 45px;
+        font-size: 18px;
+        color: #000;
+    }
+    .title_subtitle{
+        color: silver;
+        font-size: 16px;
+        text-align: left;
+        /* padding: 61px; */
+        padding: 15px;
+    }
+    .form1{
+        /* padding: 15px; */
+        /* border: 1px solid black; */
+        /* margin: -35px 0 0 42px; */
+        /* margin: 36px 0 0 0; */
+        /* text-align: center; */
+        display: none;
+    }
+    /* .form1 input[type="text"]{
+        margin-left: -3px;
+        border-radius: 3px;
+        /* width: 192px;
+        width: 60%;
+        height: 38px;
+    } */
+
+    /* Formulaire de recherche pour mobile */
+    .form2{
+        display: block;
+        padding: 15px;
+        /* margin: -36px 0 0 42px; */
+        margin: 36px 0 0 0;
+        text-align: center;
+    }
+    .form2 input[type="text"]{
+        margin-left: -4px;
+        border-radius: 3px;
+        /* width: 192px; */
+        width: 60%;
+        height: 38px;
+    }
+    /* Formulaire de recherche pour mobile */
+
+    /* Filtres */
+    .filtres p{
+        /* padding: 15px; */
+        margin-top: 35px;
+    }
+    .filtres span{
+        display: inline-block;
+        margin-top: 25px;
+    }
+    /* Filtres */
+
+    .iconInfo_h3{
+        text-align: left;
+        padding: 15px;
+        margin: 15px;
+    }
+
+    /* Section */
+    .section .article_aside{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        padding: 5px;
+        margin: 5px;
+        margin-bottom: 91px;
+    }
+    .article{
+        padding: 5px;
+        margin: 5px;
+        width: 100%;
+        margin-bottom: 91px;
+    }
+    .aside{
+        padding: 5px;
+        margin: 5px;
+        /* width: 30%; */
+        width: 100%;
+    }
+    .activites{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        margin: 5px;
+    }
+    .activites div{
+        text-align: center;
+        /* width: 25%; */
+        width: 100%;
+    }
+    /* Section */
+
+    /* Footer */
+    .footer{
+        display: flex;
+        justify-content: space-between; 
+        flex-direction: column;
+        padding: 5px;
+        margin: 5px;
+    }
+    .footer div{
+        padding: 5px;
+        margin: 25px;
+        width: 384px;
+    }
+    /* Footer */
+}
+/* Responsive design (Mobile) */
