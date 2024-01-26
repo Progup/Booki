@@ -50,11 +50,10 @@
 }
 .subtitle{
     margin-top: 25px;
-    color: silver;
+    color: #000;
     font-size: 16px;
 }
 .title_subtitle{
-    color: silver;
     font-size: 16px;
     text-align: left;
     padding: 61px;
@@ -114,10 +113,8 @@
     width: 14px;
     position: relative;
     top: 4px;
-    left: 2px;
 }
 .form2 input[type="text"]{
-    margin-left: -4px;
     border-radius: 3px;
     width: 192px;
     height: 38px;
@@ -224,15 +221,20 @@
 .article{
     border-radius: 30px;
     background-color: #F2F2F2;
-    padding: 5px;
+    padding: 21px;
     margin: 5px;
     width: 55%;
+    height: 591px;
+}
+.article h2{
+    margin-left: 15px;
+    padding: 9px;
 }
 .article .title_hebergement{
     font-weight: bold;
 }
 .article .title_hebergement_description{
-    color: silver;
+    color: #000;
 }
 .article .etoiles{
     padding: 0;
@@ -250,41 +252,55 @@
     display: flex;
     justify-content: space-between;
 }
-.article .galeries_article div{
+.article .galeries_article .picture_article{
     background-color: white;
-    border-radius: 30px;
+    border-radius: 24px;
+    padding: 9px;
     width: 100%;
+    height: 198px;
 }
 .article .galeries_article img{
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
     width: 100%;
-    height: 40%;
+    height: 71%;
+}
+.article .afficherPlus{
+    margin-left: 26px;
 }
 .aside{
     border-radius: 15px;
     background-color: #F2F2F2;
-    padding: 5px;
     margin: 5px;
     width: 35%;
 }
-.aside .galeries_aside{
+.aside h2{
+    margin-top: 29px;
+    margin-left: 23px;
+    padding: 9px;
+}
+.aside .picture_aside{
     display: flex;
     background-color: white;
     border-radius: 15px;
-    height: 171px;
+    height: 129px;
+    margin-top: -25px;
 }
 .aside img{
-    width: 125px;
-    height: 115px;
+    width: 165px;
+    height: 145px;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
+    margin-top: -29px;
 }
-.aside .galeries_aside .etoiles{
+.aside img[alt="Image"]{
+    margin-left: -29px;
+}
+.aside .picture_aside .etoiles{
     margin-left: -15px;
     margin-top: 31px;
 }
-.aside .galeries_aside .etoile{
+.aside .picture_aside .etoile{
     width: 9px;
     height: 15px;
 }
@@ -292,12 +308,13 @@
     font-weight: bold;
 }
 .aside .title_hebergement_description{
-    color: silver;
+    color: #000;
 }
 .aside .iconGraphique{
     width: 35px;
     position: relative;
-    top: -43px;
+    top: -34px;
+    right: 25px;
     float: right;
 }
 .activites{
@@ -309,7 +326,7 @@
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
     width: 100%;
-    height: 145px;
+    height: 415px;
 }
 .activites p{
     text-align: left;
@@ -404,6 +421,33 @@
         margin: 5px;
         /* width: 30%; */
         width: 100%;
+    }
+    .aside .pictures_aside{
+        display: flex;
+    }
+    .aside .picture_aside{
+        width: 96%;
+    }
+    .aside .pictures_aside img{
+        width: 51px;
+    }
+    .aside .title_hebergement{
+        font-weight: bold;
+        font-size: 11px;
+        margin-top: -25px;
+    }
+    .aside .title_hebergement_description{
+        color: #000;
+        font-size: 11px;
+        margin-top: -3px;
+    }
+    .aside .picture_aside .etoiles{
+        margin-left: -15px;
+        /* margin-top: 31px; */
+        margin-top: 9px;
+    }
+    .aside .picture_aside .etoile{
+        width: 5px;
     }
     /* Section */
 }
@@ -530,16 +574,53 @@
         margin-bottom: 91px;
     }
     .article{
+        /* border-radius: 30px; */
+        /* background-color: #F2F2F2; */
+        /* padding: 21px; */
+        margin: 5px;
+        /* width: 55%; */
+        height: 1521px;
         padding: 5px;
         margin: 5px;
         width: 100%;
         margin-bottom: 91px;
+        order: 1;
+    }
+    .article .galeries_article{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .article .picture_article{
+        width: 100%;
     }
     .aside{
         padding: 5px;
         margin: 5px;
         /* width: 30%; */
         width: 100%;
+    }
+    .aside .picture_aside{
+        width: 100%;
+    }
+    .aside .title_hebergement{
+        font-weight: bold;
+        font-size: 15px;
+        margin-top: -25px;
+    }
+    .aside .title_hebergement_description{
+        color: #000;
+        font-size: 15px;
+        margin-top: -3px;
+    }
+    .aside .picture_aside .etoiles{
+        margin-left: -15px;
+        /* margin-top: 31px; */
+        margin-top: 9px;
+    }
+    .aside .picture_aside .etoile{
+        width: 9px;
+        height: 15px;
     }
     .activites{
         display: flex;
