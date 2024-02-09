@@ -1,6 +1,5 @@
 /* - Feuille de style en cascade - */
 /* | --------------------------- |*/
-
 /* Sélecteur universel */
 *{
     padding: 0;
@@ -162,7 +161,7 @@
     color: #000;
 }
 .filtres span:hover{
-    background-color: #0065FC;
+    background-color: #DEEBFF;
     border: 1px solid #F2F2F2;
     cursor: pointer;
     border-radius: 25px;
@@ -235,6 +234,7 @@
 }
 .article .title_hebergement_description{
     color: #000;
+    font-weight: normal;
 }
 .article .etoiles{
     padding: 0;
@@ -296,15 +296,21 @@
 .aside img[alt="Image"]{
     margin-left: -29px;
 }
+.aside a{
+    text-decoration: none;
+    color: #000;
+}
 .aside .picture_aside .etoiles{
     margin-left: -15px;
-    margin-top: 31px;
+    margin-top: 47px;
 }
 .aside .picture_aside .etoile{
     width: 9px;
     height: 15px;
 }
 .aside .title_hebergement{
+    margin-top: -26px;
+    margin-bottom: 6px;
     font-weight: bold;
 }
 .aside .title_hebergement_description{
@@ -321,6 +327,10 @@
     display: flex;
     justify-content: space-between;
     margin: 5px;
+}
+.activites a{
+    text-decoration: none;
+    color: #000;
 }
 .activites img{
     border-top-right-radius: 15px;
